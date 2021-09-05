@@ -1,0 +1,211 @@
+.App {
+  height: 100%;
+  padding: 50px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* height */
+.h-20 {
+  height: 20px;
+}
+
+.h-40 {
+  height: 40px;
+}
+.h-50 {
+  height: 50px;
+}
+
+.h-full {
+  height: inherit;
+}
+
+/* padding */
+.p-2 {
+  padding: 2px
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+/* width */
+.w-50 {
+  width: 50px;
+}
+
+.w-percent-80 {
+  width: 80%;
+}
+
+.w-full {
+  width: 95%;
+}
+/* border */
+.rounded-border {
+  border-radius: 5px;
+}
+
+.rounded-border-sm {
+  border-radius: 10px;
+}
+
+/* margin */
+.m-20 {
+  margin: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px
+}
+
+.mt-10 {
+  margin-top: 10px
+}
+
+.item {
+  margin-right: 10px
+}
+.item-1 {
+    flex-grow: 2;
+}
+
+.item-2 {
+  flex-grow: 5;
+}
+
+#switch-div {
+  float: right;
+}
+
+/* text */
+.text-center {
+  text-align: center;
+}
+
+.result-string {
+  color: #515151
+}
+
+
+.pill {
+  padding: 3px 6px 3px 6px;
+}
+
+input {
+  background-color: inherit;
+  font-size: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: rgb(176, 81, 170);
+  border: none
+}
+
+.alert {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+.alert-item-1 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-title {
+  color: #ff3838;
+  font-weight: bold;
+}
+
+.alert-item-2 {
+  flex-grow: 3
+}
+
+
+@media screen and (max-width: 320px){
+  .App {
+    padding: 5px
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .item {
+    margin-right: none;
+    margin-bottom: 20px;
+  }
+
+  .sm-p-10 {
+    padding: 10px
+  }
+  
+  .sm-m-5 {
+    margin-left: 5px;
+  }
+
+  .sm-w-percent-60 {
+    width: 60%;
+  }
+
+  .sm-mb-10 {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .App {
+    padding: 10px
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .item {
+    margin-right: none;
+    margin-bottom: 20px;
+  }
+
+  .md-mb-10 {
+    margin-bottom: 10px;
+  }
+
+  .md-w-percent-80 {
+    width: 80%;
+  }
+
+  .md-m-5 {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .App {
+    padding: 20px
+  }
+
+  .l-percent-80 {
+    width: 60%
+  }
+
+  .l-m-10 {
+    margin: 5px
+  }
+}
